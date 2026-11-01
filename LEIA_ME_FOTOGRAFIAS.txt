@@ -1,0 +1,2 @@
+ELEDS - Fotografias ajustadas
+Foram removidos os titulos/codigos na faixa superior das miniaturas, preservando os pixels dos produtos. Algumas imagens do PDF original ja apresentam cortes nas bordas; recomenda-se revisao manual dessas fotos.

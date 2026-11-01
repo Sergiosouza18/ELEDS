@@ -1,0 +1,4 @@
+ELEDS V3 - Botões no menu superior
+
+Substitua somente o arquivo index.php na raiz do site. Faça backup antes.
+Os links Área do Cliente e Administração foram estilizados como botões no cabeçalho. A faixa duplicada abaixo do menu foi removida.

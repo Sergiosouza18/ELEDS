@@ -1,0 +1,12 @@
+ELEDS — Portal de clientes (atualização incremental)
+
+1. Faça backup completo do site e da pasta data antes de instalar.
+2. Envie os arquivos PHP desta atualização para a mesma pasta do admin.php no servidor.
+3. Entre em portal_admin.php com uma sessão de administrador existente para cadastrar clientes.
+4. Entregue a cada cliente o endereço portal_cliente.php e as credenciais criadas.
+5. Os clientes montam e enviam orçamentos; no portal_admin.php aplique descontos e libere.
+6. O cliente só acessa a proposta final após a liberação e pode imprimir/salvar como PDF.
+7. Produtos sem preço cadastrado não são oferecidos para orçamento.
+8. Garanta HTTPS e permissão de escrita na pasta data. Bloqueie acesso HTTP direto aos JSONs de data no servidor (arquivo .htaccess fornecido para Apache).
+9. Esta atualização mantém o catálogo público e os orçamentos existentes. Não usa MySQL: aproveita o armazenamento JSON do projeto.
+10. Teste em homologação antes de publicar. A senha inicial é definida pelo administrador; o portal não inclui recuperação automática de senha.

@@ -1,0 +1,7 @@
+ELEDS Premium Clean - Banner com veículos
+
+Alterações: banner com carro, utilitário e caminhão na página inicial; retirada dos três quadros inferiores; botões do banner clicáveis por áreas sobrepostas no desktop e links próprios no celular; âncora de grupos mantida; painel e dados preservados.
+
+Instalação: faça backup, substitua os arquivos no htdocs do XAMPP e atualize com Ctrl+F5.
+
+Nota: o banner foi gerado como imagem, portanto o texto dentro dele não é editável por HTML. Os links estão implementados como áreas clicáveis.

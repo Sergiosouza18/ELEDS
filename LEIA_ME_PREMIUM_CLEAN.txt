@@ -1,0 +1,6 @@
+ELEDS PREMIUM CLEAN
+
+Identidade branca, preta e vermelha, novo banner exclusivo, blocos Linha Leve/Linha Pesada, cards e botões revisados.
+
+Instalação: faça backup, extraia os arquivos na pasta do XAMPP e pressione Ctrl+F5.
+Produtos, usuários e orçamentos foram preservados.

@@ -1,0 +1,4 @@
+ELEDS Premium Clean - Menu V2
+Substitua os arquivos no XAMPP após backup. Atualize Ctrl+F5.
+Menu com fundo branco, links legíveis, ativo vermelho e responsividade.
+Todas as rotas e ações existentes preservadas.

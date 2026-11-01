@@ -1,0 +1,7 @@
+ELEDS Portal de Clientes - Atualizacao do catalogo autenticado
+
+Substitua index.php e portal_cliente.php na raiz do site. Faca backup antes.
+O cliente faz login em portal_cliente.php e segue para index.php com os precos.
+O carrinho fica no navegador ate ser enviado; na pagina Meu Orcamento confirme as quantidades e envie para analise.
+Precos sao recalculados no servidor ao enviar. O catalogo publico nao exibe precos.
+Teste no servidor PHP com HTTPS e contas de teste antes de liberar.

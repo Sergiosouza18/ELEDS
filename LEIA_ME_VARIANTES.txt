@@ -1,0 +1,1 @@
+Produtos 12V e 24V cadastrados separadamente quando o código 24V foi identificado no PDF. Exemplo EL P11512 (12V, branca/verde/vermelha/rosa/azul) e EL P11524 (24V, branca). Variantes compartilham a fotografia do modelo. Confira no painel os demais códigos e cores antes de publicar.

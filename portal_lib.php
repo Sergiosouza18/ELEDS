@@ -1,0 +1,10 @@
+<?php
+function ep_read($name){$p=__DIR__.'/data/'.$name.'.json';$v=is_file($p)?json_decode((string)file_get_contents($p),true):[];return is_array($v)?$v:[];}
+function ep_write($name,$v){$p=__DIR__.'/data/'.$name.'.json';return file_put_contents($p,json_encode(array_values($v),JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES),LOCK_EX)!==false;}
+function ep_h($v){return htmlspecialchars((string)$v,ENT_QUOTES,'UTF-8');}
+function ep_money($v){return 'R$ '.number_format((float)$v,2,',','.');}
+function ep_admin(){return !empty($_SESSION['admin_ok']) && ($_SESSION['admin_role']??'')==='admin';}
+function ep_csrf(){if(empty($_SESSION['ep_csrf']))$_SESSION['ep_csrf']=bin2hex(random_bytes(24));return $_SESSION['ep_csrf'];}
+function ep_check(){if(!hash_equals(ep_csrf(),(string)($_POST['csrf']??''))) {http_response_code(403);exit('Solicitação inválida.');}}
+function ep_total($q){$s=0;foreach(($q['items']??[]) as $i){$p=(float)($i['price']??0);$d=max(0,min(100,(float)($i['discount']??0)));$s+=$p*(int)($i['qty']??1)*(1-$d/100);}return round($s*(1-max(0,min(100,(float)($q['discount']??0)))/100),2);}
+function ep_style(){echo '<style>body{font-family:system-ui,Arial;background:#f3f6fb;color:#183047;margin:0}header{background:#102b43;color:white;padding:20px}header a{color:white;margin-right:20px}main{max-width:1150px;margin:25px auto;padding:0 15px}.panel{background:white;border:1px solid #dae2eb;border-radius:12px;padding:20px;margin:15px 0}input,select,button{padding:10px;border:1px solid #b8c9d9;border-radius:7px;max-width:100%}button,.btn{background:#126bba;color:white;border:0;cursor:pointer;padding:10px 14px;border-radius:7px;text-decoration:none;display:inline-block}table{width:100%;border-collapse:collapse}td,th{padding:10px;text-align:left;border-bottom:1px solid #e1e8ef}label{display:inline-block;margin:6px}.muted{color:#66788b}.row{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.error{color:#a52d2d}.ok{color:#087a49}@media(max-width:650px){table{display:block;overflow-x:auto}}</style>';}
